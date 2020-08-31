@@ -1,0 +1,47 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+header{
+  display: flex;
+  background:lightblue;
+  width: 90%;
+  margin:auto;
+  text-align: center;
+
+}
+
+.log-container{
+  background: lightgreen;
+  flex: 1;
+}
+
+nav{
+  background: lightgray;
+  flex: 2;
+}
+
+nav li{
+ 
+  list-style: none;
+  flex: 1;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav a{
+  text-decoration: none;
+  
+}
+.cart{
+  background: lightpink;
+  flex: 1;
+}
