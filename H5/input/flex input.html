@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        height:100vh;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    div{
+        height:100px;
+        width:500px;
+        padding:30px;
+        display:flex;
+        align-items:stretch;
+    }
+    span{
+        flex: 0 0 100px;
+        background-color: lightblue;
+        border-radius: 20px;
+        text-align: center;
+        padding:5px;
+        color:white;
+        transform: translate(20%);
+        z-index: 1;
+    }
+    input{
+        background-color: lightgrey;
+        border:1px solid lightblue;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        padding-left: 25px;
+        font-size:15px;
+        color:grey;
+    }
+    input:focus{
+        flex:1;
+        background-color:white;
+        transition: 1s ease;
+        outline: none;
+        
+    }
+    
+    
+</style>
+<body>
+    <div><span>搜索</span>
+        <input type="text" placeholder="输入姓名"></div>
+    
+</body>
+</html>

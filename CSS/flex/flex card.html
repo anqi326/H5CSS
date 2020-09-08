@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html, body{
+        height:100%;
+        background-color: lightcyan;
+    }
+    section{
+        height:80%;
+        display:flex;
+        flex-direction: column;
+        align-items:stretch;
+    }
+    h1{
+        text-align:center;
+        margin-top:100px;
+    }
+    .content{
+        flex:1;
+        display:flex;
+        align-items:center;
+        padding: 50px 0;
+        justify-content: space-around;
+    }
+    .card{
+        margin:20px 0;
+        min-height:150px;
+        flex:0 0 120px;
+        border-radius: 10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align:center;
+    }
+    .card:nth-child(1){
+        background-color: lightgreen;
+    }
+    .card:nth-child(2){
+        background-color: lightblue;
+    }
+    .card:nth-child(3){
+        background-color: lightpink;
+    }
+    .card:nth-child(4){
+        background-color: lightsalmon;
+    }
+    .card:hover{
+        align-self: stretch;
+    }
+
+    
+</style>
+<body>
+    <section>
+        <h1>专业课程</h1>
+        <div class="content">
+            <div class="card">
+                <h2>土木专业</h2>
+                <p>30天学会搬砖</p>
+            </div>
+            <div class="card">
+                <h2>物流专业</h2>
+                <p>30天学会送快递</p>
+            </div>
+            <div class="card">
+                <h2>会计专业</h2>
+                <p>30天学会打算盘</p>
+            </div>
+            <div class="card">
+                <h2>地质专业</h2>
+                <p>30天学会挖矿</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
