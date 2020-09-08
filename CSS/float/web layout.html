@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #777;
+}
+.header li {
+    float:left;
+}
+.header li a{
+    display:block;
+    text-decoration: none;
+    padding:15px;
+    color:white;
+}
+.header li a:hover:not(.active){
+    background-color: #222;
+}
+.header li a.active{
+    background-color: #4CAF50;
+}
+
+.column{
+    float:left;
+    padding:10px;
+}
+.nav{
+    width:25%;
+    
+}
+.nav ul{
+    list-style: none;
+}
+
+.nav ul li a{
+    display:block;
+    text-decoration: none;
+    padding:8px;
+    color:#666;
+    background-color: #eee;
+    margin-bottom: 5px;
+}
+.nav ul li a.active{
+    background-color: #008CBA;
+    color:white;
+}
+.nav ul li a:hover:not(.active){
+    background-color: black;
+    color:white;
+}
+.content{
+    width:75%;
+}
+.main{
+    margin:5px;
+    overflow: hidden;
+}
+.content .title{
+    background-color: #2196F3;
+    color: white;
+    text-align: center;
+    padding:15px;
+}
+.content h1,p{
+    margin-bottom: 15px;
+}
+.footer{
+    background-color: #444;
+    color: white;
+    padding: 15px;
+}
+</style>
+<body>
+<div class="header">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</div>
+<div class="main">
+    <div class="column nav">
+        <ul>
+            <li><a href="#">The Flight</a></li>
+            <li><a href="#" class="active">The City</a></li>
+            <li><a href="#">The Island</a></li>
+            <li><a href="#">The Food</a></li>
+            <li><a href="#">The People</a></li>
+            <li><a href="#">The History</a></li>
+            <li><a href="#">The Ocean</a></li>
+        </ul>
+    </div>
+    <div class="column content">
+        <h1 class="title">The City</h1>
+        <h1>Chania</h1>
+        <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
+        <p>You will learn more about responsive web pages in a later chapter.</p>
+    </div>
+</div>
+<div class="footer">
+    <p>bottom info</p>
+</div>
+
+</body>
+
+
+</html>
