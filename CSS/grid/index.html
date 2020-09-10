@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    html, body{
+        height:100%;
+    }
+    body{
+        display:flex;
+        flex-direction: column;
+    }
+    .content{
+        flex:1;
+        display:grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: repeat(3,100px);
+        grid-template-rows: repeat(3,100px);
+        place-items: center start;
+        grid-auto-rows: 50px;
+
+    }
+    .content div{
+        font:20px arial,sans-serif;;
+        height: 80%;
+        width:80%;
+        justify-self: end;
+        align-self: center;
+    }
+    .content div:nth-child(1){
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start:2;
+        grid-column-end: 4;
+        grid-area: 1 / 2 / 2 / 4;
+        background-color: lightblue;
+    }
+    .content div:nth-child(2){
+        background-color: lightcoral;
+    }
+    .content div:nth-child(3){
+        background-color: lightcyan;
+    }
+    .content div:nth-child(4){
+        background-color: lightgreen;
+    }
+    .content div:nth-child(5){
+        background-color: lightgrey;
+    }
+    .content div:nth-child(6){
+        background-color: lightpink;
+    }
+    .content div:nth-child(7){
+        background-color: lightsalmon;
+    }
+    .content div:nth-child(8){
+        background-color: lightyellow;
+        grid-row-start: 5;
+        grid-row-end: 6;
+        grid-column-start: 3;
+        grid-column-end:4 ;
+    }
+    .content div:nth-child(9){
+        background-color: lightskyblue;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+    
+</style>
+<body>
+    <div class="header">
+        <h1>header</h1>
+    </div>
+    <div class="content">
+        <div>
+            1
+        </div>
+        <div>
+            <p>2</p>
+        </div>
+        <div>
+            <p>3</p>
+        </div>
+        <div>
+            <p>4</p>
+        </div>
+        <div>
+            <p>5</p>
+        </div>
+        <div>
+            <p>6</p>
+        </div>
+        <div>
+            <p>7</p>
+        </div>
+        <div>
+            <p>8</p>
+        </div>
+        <div>
+            <p>9</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1>footer</h1>
+    </div>
+    
+</body>
+</html>
